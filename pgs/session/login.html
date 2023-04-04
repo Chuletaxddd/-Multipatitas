@@ -16,90 +16,50 @@
     <link type="text/css" rel="stylesheet" href="/css/session.css">
     <title>login</title>
 </head>
-<header>
-    <!------------------------------------------[BarraNav]------------------------------------------------>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navsty">
-            <!--Titulo en Barra_Nav-->
-            <a href="/index.html" class="navbar-brand colory">
-                MultiPatitas
-            </a>
-            <!--Boton de menu para dispositivos celulares o tablet-->
-            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
-                <span class="navbar-toggler-icon colory">
-                </span>
-            </button>
 
-            <!--Menu de navegacion-->
-            <div class="collapse navbar-collapse" id="menu" type="button">
-                <ul class="navbar-nav mx-auto ">
-                    <li class="navbar-item active">
-                        <a href="/index.html" class="nav-link colory itemy">Inicio</a>
-                    </li>
-                    <li class="navbar-item active">
-                        <a href="/pgs/productos.html" class="nav-link colory itemy itemy">Productos</a>
-                    </li>
-                    <li class="navbar-item active">
-                        <a href="/pgs/contactos.html" class="nav-link colory itemy">Contactos</a>
-                    </li>
-                    <li class="navbar-item active">
-                        <a href="/pgs/seguimiento.html" class="nav-link colory itemy">Seguimiento</a>
-                    </li>
-                    <li class="navbar-item active">
-                        <a href="/pgs/carrito.html" class="nav-link colory itemy">Carrito</a>
-                    </li>
-                    <!-- menu de registro y login-->
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle colory itemy" href="#" id="menu" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Cuenta
-                        </a>
-                        <div class="dropdown-menu colory dropy navsty itemy " aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="/pgs/session/login.html">Login</a>
-                            <a class="dropdown-item " href="/pgs/session/sign_up.html">SingUp</a>
-                            <!-- div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a> -->
-                        </div>
-                    </li>
-                </ul>
-                <span class="navbar-link">
-                    @Teache-C
-                </span>
-            </div>
-        </nav>
-    </div>
-    <!----------------------------------------------------------------------------------------------->
-</header>
 <body>
-    <div class="modal-dialog text-center">
-        <div class="col-md-8 main_secc">
-            <div class="modal-content">
-                <div class="col-12 user-img">
-                    <img src="/img/pngwing.com.png">
-                </div>
-                <form class="col-12">
-                    <div class="form-group color_fuente">
-                        Usuario
-                        <input class="form-control form_color" type="text">
-                    </div>
-
-                    <div class="form-group color_fuente ">
-                        Contraseña
-                        <input class="form-control form_color" type="password">
-
-                    </div>
-
-                    <a href="/pgs/session/login.html"><button type="button" class="btn btn-light">
-                            <i class="fa-solid fa-right-to-bracket"></i> Iniciar
-                            Sesión</button></a>
-                </form>
-                <div class="col-12 forgot">
-                    <a class="colory" href="#Olvido_su_contrasena">Creo que olvide mi contraseña...</a>
-                </div>
-
+    <div class="container">
+        <!-- Parte izquierda del container-->
+        <div class="login-left">
+            <div class="login-header">
+                <h1>Welcome</h1>
+                <p>That's a Login Form use it :=</p>
             </div>
-        </div>
+            <!--Formulario De inicio de sesión-->
+            <form class="login-form">
+                <!--Contenido del formulario-->
+                <div class="login-form-content">
+                    <div class="form-item">
+                        <label for="user">Enter User</label>
+                        <input type="text" id="user">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">Do u have the Keys?</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form-item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="RememberMe">
+                            <label for="RememberMe" class="checkbox_label"> Remember Me... </label>
 
+                        </div>
+                    </div>
+                    <button type="submit">Sign In</button>
+
+                </div>
+                <div class="login-form-footer">
+                    <p>Estamos en convenio con: </p>
+                    <a href="#AdoptaMe.cl">
+                        <img width="50" src="" alt="Just No...">
+                        Adopta.me
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!-- Parte derecha del container-->
+        <div class="login-right">
+            <img class="imgy" src="/img/jelly-carpet-ghz-g3d88c8d23_1280.jpg" alt="Just No...">
+        </div>
     </div>
 
 
