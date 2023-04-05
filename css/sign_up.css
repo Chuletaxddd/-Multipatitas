@@ -1,46 +1,20 @@
-/* barra */
-.itemy {
-    margin-left: 86px;
-}
-
-.itemy:hover {
-    background-color: #D9D9D9;
-    border-radius: 10px;
-}
-
-.colory {
-    color: #322203 !important;
-}
-
-.navsty {
-    background-color: #EBEBEB !important;
-}
-
-.dropy {
-    margin-top: 0px !important;
-    margin-left: 86px !important;
-    border-radius: 10px;
-}
-
-.dropy:hover {
-    background-color: #D9D9D9;
-}
-
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    margin-top: 20px!important;
+    margin-top: 20px !important;
     font-family: "Inter", sans-serif;
-    background-color: #e99bac!important;
+    background-color: #e99bac !important;
     padding: 20px;
     background-size: cover;
     backdrop-filter: blur(10px);
-    
-    
+
+
 }
+
 /* Formulario_Css */
+/* Conteiner en el cual esta toda la informacion del Form */
 .container {
     min-height: calc(100vh - 40px * 2);
     display: grid;
@@ -50,8 +24,9 @@ body {
     overflow: hidden;
 }
 
+/* Contenido del Form */
 .login-header {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .login-header h1 {
@@ -64,16 +39,16 @@ body {
     opacity: .7;
 }
 
-.login-left {
+.login-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
     background-color: white;
-    
+
 }
 
-.login-right {
+.login-left {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -82,6 +57,7 @@ body {
 
 .imgy {
     width: 100% !important;
+     height: 600px;
 }
 
 .login-form {
@@ -142,6 +118,7 @@ input[type='checkbox'] {
 }
 
 button {
+    margin-top: 5px;
     text-align: center;
     border: none;
     height: 55px;
@@ -151,9 +128,20 @@ button {
     cursor: pointer;
 }
 
+/* Footer del form */
+.footy {
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
+.colory {
+    color: #e99bac !important;
+}
+
 /* responsive */
 @media(max-width: 1350px) {
-    .login-left {
+    .login-right {
         padding: 50px !important;
     }
 
@@ -165,7 +153,12 @@ button {
         flex-direction: column;
         gap: 15px;
     }
+
+    .imgy{
+        height: 700px !important;
+    } 
 }
+
 
 @media(max-width: 768px) {
     body {
@@ -176,7 +169,7 @@ button {
         grid-template-columns: auto;
     }
 
-    .login-right {
+    .login-left {
         display: none;
     }
 }
